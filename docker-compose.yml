@@ -1,0 +1,9 @@
+
+services:
+  vazifa-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sh -c "python bot.py"
+    env_file:
+      - .env
